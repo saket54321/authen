@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>profile</title>
+</head>
+<body>
+  <% if (user) { %>
+    <h1>Welcome to the dashboard, <%= user.email %>!</h1>
+  <% } else { %>
+    <p>Please log in to access the dashboard.</p>
+  <% } %>
+  <div class="div-right flex">
+    <div style="font-size: 14px">
+        <a href="/signout" role="button"> Logout</a>
+    </div>
+</div>
+</body>
+</html>
